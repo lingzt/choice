@@ -25,7 +25,7 @@ class SelectionSection: NSObject {
     
     func selectionWinner() -> [Candidate] {
         return [Candidate]()
-    }
+}
     
     
 }

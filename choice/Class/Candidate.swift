@@ -18,5 +18,7 @@ class Candidate: NSObject {
         self.title = title
         self.image = image
     }
+    
+    
 
 }

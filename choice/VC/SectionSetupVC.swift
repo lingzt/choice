@@ -9,10 +9,10 @@
 import UIKit
 
 class SectionSetupVC: UIViewController {
-
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var testTextView: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
 }

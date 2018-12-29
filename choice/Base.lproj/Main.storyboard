@@ -1,15 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AfU-AG-DBR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item 2-->
+        <scene sceneID="9cR-1i-Qkv">
+            <objects>
+                <viewController id="BdL-tq-861" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wlE-H6-RuY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7X-Pd-eJ8">
+                                <rect key="frame" x="38" y="125" width="125" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1X-7o-PEC">
+                                <rect key="frame" x="77" y="283" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kl2-a8-aLd">
+                                <rect key="frame" x="221" y="125" width="125" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGd-63-bk8">
+                                <rect key="frame" x="260" y="283" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eqE-ak-laL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="0a8-eP-Xne"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bm-nu-e7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="-419"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bGF-Bb-f7u">
+            <objects>
+                <tabBarController id="AfU-AG-DBR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0ec-xh-zbZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="r0R-yL-2ax"/>
+                        <segue destination="4Kb-tI-axu" kind="relationship" relationship="viewControllers" id="mw8-kA-t0b"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6Y-ZZ-T6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1388" y="-80"/>
+        </scene>
         <!--SectionSetupVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,12 +71,92 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqX-B7-eQj">
+                                <rect key="frame" x="26" y="55" width="323" height="274"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="PN7-A4-hrd">
+                                        <rect key="frame" x="8" y="8" width="307" height="258"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.30146566885603632" blue="0.15412613034695244" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="PN7-A4-hrd" firstAttribute="trailing" secondItem="vqX-B7-eQj" secondAttribute="trailingMargin" id="MXf-WH-LCd"/>
+                                    <constraint firstItem="PN7-A4-hrd" firstAttribute="leading" secondItem="vqX-B7-eQj" secondAttribute="leadingMargin" id="Z8S-s0-flp"/>
+                                    <constraint firstItem="PN7-A4-hrd" firstAttribute="top" secondItem="vqX-B7-eQj" secondAttribute="topMargin" id="bnj-T5-BUl"/>
+                                    <constraint firstItem="PN7-A4-hrd" firstAttribute="centerY" secondItem="vqX-B7-eQj" secondAttribute="centerY" id="bpb-SP-bg8"/>
+                                    <constraint firstItem="PN7-A4-hrd" firstAttribute="centerX" secondItem="vqX-B7-eQj" secondAttribute="centerX" id="heS-bh-jUF"/>
+                                    <constraint firstItem="PN7-A4-hrd" firstAttribute="bottom" secondItem="vqX-B7-eQj" secondAttribute="bottomMargin" id="rC7-N4-bZd"/>
+                                </constraints>
+                            </scrollView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GbK-BB-OW0">
+                                <rect key="frame" x="139" y="373" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvi-mc-AgY">
+                                <rect key="frame" x="164" y="443" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BdL-tq-861" kind="show" id="o8E-Jg-YR9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vqX-B7-eQj" secondAttribute="bottom" constant="289" id="9gO-FF-yBx"/>
+                            <constraint firstItem="vqX-B7-eQj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="M3d-Us-3to"/>
+                            <constraint firstItem="vqX-B7-eQj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oJ3-mw-3k0"/>
+                            <constraint firstItem="vqX-B7-eQj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="vCN-sv-PFa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="cAu-hk-S1r"/>
+                    <connections>
+                        <outlet property="scrollView" destination="vqX-B7-eQj" id="Djs-gz-4lq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-438" y="-418"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Mms-SP-Pyt">
+            <objects>
+                <viewController id="4Kb-tI-axu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4pR-lZ-GBn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBy-zU-b2b">
+                                <rect key="frame" x="67" y="77" width="240" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hB8-ez-Mu7">
+                                <rect key="frame" x="67" y="354" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NX9-K6-fjg">
+                                <rect key="frame" x="164" y="540" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wmO-pB-tU3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="jqQ-21-F6F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4c-Ne-dch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="290"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="timg.jpeg" width="626" height="574"/>
+    </resources>
 </document>
