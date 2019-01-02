@@ -65,7 +65,7 @@
 				1428822221BE1EFD003670F0 /* AppDelegate.swift */,
 				148E380921CC5B7D0076110E /* Class */,
 				148E380821CC5B6B0076110E /* VC */,
-				1428822621BE1EFD003670F0 /* Main.storyboard */,
+				3DE9A5D321DC334D00BB2271 /* Storyboard */,
 				1428822921BE1EFE003670F0 /* Assets.xcassets */,
 				14EEC8E821D543C2001B7646 /* timg.jpeg */,
 				1428822B21BE1EFE003670F0 /* LaunchScreen.storyboard */,
@@ -90,6 +90,14 @@
 				148E380221CC55000076110E /* History.swift */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		3DE9A5D321DC334D00BB2271 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1428822621BE1EFD003670F0 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +132,7 @@
 				TargetAttributes = {
 					1428821E21BE1EFD003670F0 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -321,7 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Ling.choice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -339,7 +348,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Ling.choice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
