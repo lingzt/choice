@@ -9,11 +9,11 @@
 import UIKit
 
 class Candidate: NSObject {
-    var image: UIImage
+    var image: UIImage?
     var title: String
     let candidateID: Int
     
-    init(candidateID: Int, title: String, image: UIImage) {
+    init(candidateID: Int, title: String, image: UIImage?) {
         self.candidateID = candidateID
         self.title = title
         self.image = image

@@ -128,6 +128,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="cAu-hk-S1r"/>
                     <connections>
+                        <outlet property="collectionView" destination="Exs-XQ-pVp" id="w8y-0y-XQo"/>
+                        <outlet property="testTextView" destination="nTw-MI-sTw" id="1rt-ca-DbD"/>
                         <segue destination="BdL-tq-861" kind="show" id="Scb-aP-mUf"/>
                     </connections>
                 </viewController>
