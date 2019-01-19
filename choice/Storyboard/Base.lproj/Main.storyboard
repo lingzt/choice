@@ -73,33 +73,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" userInteractionEnabled="NO" contentMode="center" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mv8-m2-MkX">
-                                <rect key="frame" x="67" y="357" width="241" height="250"/>
+                                <rect key="frame" x="67" y="39.5" width="241" height="567.5"/>
                                 <subviews>
                                     <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAp-AO-Uah">
-                                        <rect key="frame" x="0.5" y="0.0" width="240" height="50"/>
+                                        <rect key="frame" x="0.5" y="0.0" width="240" height="113.5"/>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nTw-MI-sTw">
-                                        <rect key="frame" x="108" y="50" width="25" height="50"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Selction TItle" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nTw-MI-sTw">
+                                        <rect key="frame" x="67.5" y="113.5" width="106" height="113.5"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="775-h4-0vg">
-                                        <rect key="frame" x="0.5" y="100" width="240" height="50"/>
+                                        <rect key="frame" x="0.5" y="227" width="240" height="113.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLt-dd-6aa">
-                                        <rect key="frame" x="97.5" y="150" width="46" height="50"/>
+                                        <rect key="frame" x="97.5" y="340.5" width="46" height="113.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nu8-zq-1eB">
-                                        <rect key="frame" x="0.5" y="200" width="240" height="50"/>
+                                        <rect key="frame" x="0.5" y="454" width="240" height="113.5"/>
                                     </view>
                                 </subviews>
                             </stackView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Exs-XQ-pVp">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Exs-XQ-pVp">
                                 <rect key="frame" x="16" y="60" width="343" height="343"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Exs-XQ-pVp" secondAttribute="height" multiplier="1:1" id="AGX-gt-PQG"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z1l-OC-eFF">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -121,7 +126,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="mv8-m2-MkX" secondAttribute="bottom" constant="60" id="81R-Vj-FyA"/>
+                            <constraint firstItem="Exs-XQ-pVp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UjT-lQ-3qH"/>
                             <constraint firstItem="mv8-m2-MkX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Yyl-cp-EoF"/>
+                            <constraint firstItem="Exs-XQ-pVp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="gUd-3S-4tW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Exs-XQ-pVp" secondAttribute="trailing" constant="16" id="jEF-KS-M2g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mv8-m2-MkX" secondAttribute="trailing" constant="67" id="k5I-jJ-yEc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
